@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <title>Cat's Assistant</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+
+<body class="tema-moana">
+    <div class="header">
+        <img src="assets/cat1.png" class="avatar" alt="Moana" />
+        <h2>Moana Assistente! 🐱</h2>
+    </div>
+    
+    <div class="assistentes-container">
+        <button id="moana-btn" class="assistente-btn">
+            <i class="fas fa-cat"></i> Falar com Moana
+        </button>
+        <button id="maue-btn" class="assistente-btn">
+            <i class="fas fa-cat"></i> Falar com Maue
+        </button>
+    </div>
+
+    <div class="chat-container">
+        <div class="input-group">
+            <input type="text" id="mensagem" placeholder="Digite sua mensagem..." />
+            <button id="enviarMensagem">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+        <div id="resposta" class="resposta"></div>
+    </div>
+
+    <div id="frase" class="frase">
+        <i class="fas fa-quote-left"></i>
+        <span>Carregando...</span>
+        <i class="fas fa-quote-right"></i>
+    </div>
+    <button id="sugestaoBtn">
+        <i class="fas fa-lightbulb"></i> Sugestão de pesquisa
+    </button>
+    <div id="sugestao" class="sugestao"></div>
+    <div class="atalhos">
+        <h3><i class="fas fa-star"></i> Links Favoritos</h3>
+        <a href="https://chat.openai.com" target="_blank">
+            <i class="fas fa-robot"></i> ChatGPT
+        </a>
+        <a href="https://github.com" target="_blank">
+            <i class="fab fa-github"></i> GitHub
+        </a>
+        <a href="https://youtube.com" target="_blank">
+            <i class="fab fa-youtube"></i> YouTube
+        </a>
+
+        <h3><i class="fas fa-link"></i> Atalhos Personalizados</h3>
+        <div id="listaAtalhos"></div>
+
+        <div class="input-group">
+            <input type="text" id="nomeAtalho" placeholder="Nome do site" />
+            <input type="url" id="urlAtalho" placeholder="https://..." />
+            <button id="adicionarAtalho">
+                <i class="fas fa-plus"></i> Adicionar
+            </button>
+        </div>
+    </div>
+    <hr />
+
+    <div id="historico">
+        <h3><i class="fas fa-history"></i> Último site visitado</h3>
+        <p id="ultimoSite">Carregando...</p>
+    </div>
+
+    <script src="frases.js"></script>
+    <script src="personalities.js"></script>
+    <script src="popup.js"></script>
+</body>
+</html>
