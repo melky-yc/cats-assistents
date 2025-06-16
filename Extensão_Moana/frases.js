@@ -1,5 +1,5 @@
 const frases = [
-  "Você é capaz de conquistar qualquer coisa, Melky!",
+  "Você é capaz de conquistar qualquer coisa!",
   "Os erros são como bolas de lã. Enroscam, mas você aprende!",
   "Tome um gole d’água. Gatinhos hidratados programam melhor.",
   "Se você não beber agua, eu vou te bater!",
